@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Custom Crochet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="#" method="POST">
+        <h1>🧶Custom Crochetbyksh🧶</h1>
+        <fieldset>
+            <legend>Data</legend>
+ <div class="form-group">
+            <!-- 1. Text -->
+            <label for="nama">Nama Lengkap Pemesan:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+            <!-- 2. Password (Opsional) -->
+            <label for="pin">PIN Membership Crochetbyksh (Opsional):</label>
+            <input type="password" id="pin" name="pin" placeholder="Masukkan PIN Membership">
+            </div>
+            </fieldset>
+<fieldset>
+            <legend> Custom </legend>
+            <!-- 3. Select Option -->
+            <label for="produk">Pilih Jenis Produk Crochet:</label>
+            <select id="produk" name="produk" required>
+                <option value="" disabled selected>-- Pilih Produk --</option>
+                <option value="amigurumi">Amigurumi (Boneka Rajut)</option>
+                <option value="tas">Tas / Pouch Rajut</option>
+                <option value="wearable">Cardigan / Sweater</option>
+                <option value="topi">Topi / Bucket Hat</option>
+                <option value="aksesoris">Aksesoris (Bando / Gantungan Kunci)</option>
+            </select>
+
+            <!-- 4. Radio Button (dalam div class checks) -->
+            <label>Pilih Jenis Benang:</label>
+            <div class="checks">
+                <label><input type="radio" name="benang" value="milk_cotton" checked> Milk Cotton</label><br>
+                <label><input type="radio" name="benang" value="katun_bali"> Katun Bali</label><br>
+                <label><input type="radio" name="benang" value="polycherry"> Polycherry</label><br>
+                <label><input type="radio" name="benang" value="velvet"> Velvet</label>
+            </div>
+
+            <!-- 5. Checkbox (dalam div class checks) -->
+            <label>Tambahan Layanan / Aksesoris:</label>
+            <div class="checks">
+                <label><input type="checkbox" name="tambahan[]" value="gift_box"> Kotak Hadiah</label><br>
+                <label><input type="checkbox" name="tambahan[]" value="kartu_ucapan"> Kartu Ucapan</label><br>
+                <label><input type="checkbox" name="tambahan[]" value="furing"> Furing & Resleting</label><br>
+                <label><input type="checkbox" name="tambahan[]" value="gantungan"> Gantungan Kunci</label>
+            </div>
+
+            <!-- 6. Textarea -->
+            <label for="catatan">Detail & Catatan Custom:</label>
+            <textarea id="catatan" name="catatan" placeholder="Contoh: Warna utamanya ungu, ."></textarea>
+
+            <!-- 7. Submit Button -->
+            <label></label>
+            <input type="submit" value="Kirim Pesanan Custom">
+        </fieldset>
+    </form>
+
+</body>
+</html>
