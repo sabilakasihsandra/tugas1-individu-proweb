@@ -13,18 +13,18 @@
         <fieldset>
             <legend>Data</legend>
  <div class="form-group">
-            <!-- 1. Text -->
+            
             <label for="nama">Nama Lengkap Pemesan:</label>
             <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
 
-            <!-- 2. Password (Opsional) -->
             <label for="pin">PIN Membership Crochetbyksh (Opsional):</label>
+            <div class="password-box">
             <input type="password" id="pin" name="pin" placeholder="Masukkan PIN Membership">
             </div>
             </fieldset>
 <fieldset>
             <legend> Custom </legend>
-            <!-- 3. Select Option -->
+           
             <label for="produk">Pilih Jenis Produk Crochet:</label>
             <select id="produk" name="produk" required>
                 <option value="" disabled selected>-- Pilih Produk --</option>
@@ -35,7 +35,7 @@
                 <option value="aksesoris">Aksesoris (Bando / Gantungan Kunci)</option>
             </select>
 
-            <!-- 4. Radio Button (dalam div class checks) -->
+            
             <label>Pilih Jenis Benang:</label>
             <div class="checks">
                 <label><input type="radio" name="benang" value="milk_cotton" checked> Milk Cotton</label><br>
@@ -44,7 +44,7 @@
                 <label><input type="radio" name="benang" value="velvet"> Velvet</label>
             </div>
 
-            <!-- 5. Checkbox (dalam div class checks) -->
+            
             <label>Tambahan Layanan / Aksesoris:</label>
             <div class="checks">
                 <label><input type="checkbox" name="tambahan[]" value="gift_box"> Kotak Hadiah</label><br>
@@ -53,11 +53,11 @@
                 <label><input type="checkbox" name="tambahan[]" value="gantungan"> Gantungan Kunci</label>
             </div>
 
-            <!-- 6. Textarea -->
+           
             <label for="catatan">Detail & Catatan Custom:</label>
             <textarea id="catatan" name="catatan" placeholder="Contoh: Warna utamanya ungu, ."></textarea>
 
-            <!-- 7. Submit Button -->
+            
             <label></label>
             <input type="submit" value="Kirim Pesanan Custom">
         </fieldset>
