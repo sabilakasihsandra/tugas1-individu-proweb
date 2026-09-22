@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(169, 132, 203);
+            color: rgb(23, 3, 43);
+        }
+        button{
+            background-color: rgb(123, 91, 153);
+            color: rgb(36, 5, 65);
+        }
+        input{
+            box-sizing: border-box;
+            background-color: rgb(194, 163, 224);
+        }
+    </style>
+</head>
+<body>
+    <h1>Kalkulator Sederhana</h1>
+    <fieldset>
+   <form name="formKalkulator">
+        <label for="num1">Input Bilangan 1</label>
+        <input type="text" name="Bilangan1" size="30" id="uname"><br><br>
+        <label for="num2">Input Bilangan 2</label>
+        <input type="text" name="Bilangan2"size="30" id="pass"><br><br>
+       
+        <button type="button" onclick="hitung('+')">+</button>
+        <button type="button" onclick="hitung('-')">-</button>
+        <button type="button" onclick="hitung('*')">*</button>
+        <button type="button" onclick="hitung('/')">/</button><br><br>
+    
+        <label for="out">Output</label>
+        <input type="text" name="hasil" id="out">
+    </fieldset>
+    </form>
+    <script>
+        function hitung(operator){
+            let Bilangan1 =parseFloat(document.formKalkulator.Bilangan1.value);
+            let Bilangan2 =parseFloat(document.formKalkulator.Bilangan2.value);
+            let hasil = 0;
+
+            if (operator == '+'){
+                hasil = Bilangan1 + Bilangan2;
+            }else if (operator == '-'){
+                hasil = Bilangan1 - Bilangan2;
+            }else if (operator == '*'){
+                hasil = Bilangan1 * Bilangan2;
+            }else if (operator == '/'){
+                hasil = Bilangan1 / Bilangan2;
+                if (Bilangan2 == 0){
+                    alert("Input yang betolll!!")
+                    return;
+                }
+            }
+            document.formKalkulator.hasil.value = hasil;
+        }
+    </script>
+</body>
+</html>
